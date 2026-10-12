@@ -1,25 +1,25 @@
 {
-  "active": false,
-  "hostname": "rdpfree-5",
+  "active": true,
+  "hostname": "rdpfree-6",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "disk_free_gb": 82.2,
     "cpu_threads": 4,
+    "disk_free_gb": 82.4,
     "ram_gb": 16.0
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-12T13:15:54Z",
-  "expires_at": "2026-10-12T19:10:54Z",
+  "started_at": "2026-10-12T13:17:27Z",
+  "expires_at": "2026-10-12T19:12:27Z",
   "duration_menit": 355,
-  "run_id": "38254445535",
+  "run_id": "38254621164",
   "run_attempt": "1",
-  "run_number": "5",
-  "run_url": "https://github.com/kupalmendoza5-design/Rdppp/actions/runs/38254445535",
+  "run_number": "6",
+  "run_url": "https://github.com/kupalmendoza5-design/Rdppp/actions/runs/38254621164",
   "mode": "bersih+win10",
   "xydesk": {
     "host": "ok",
@@ -39,15 +39,19 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
+    "mode": "tailscale",
     "tailscale": {
-      "status": "failed",
-      "note": "Tailscale menolak koneksi. Periksa masa berlaku auth key dan persetujuan perangkat di tailnet.",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
-    },
-    "mode": "tailscale"
+      "status": "ok",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "magicdns": "rdpfree-6.tail133b64.ts.net.",
+      "ip": "100.116.2.52",
+      "hostname": "rdpfree-6"
+    }
   },
-  "stopped_at": "2026-10-12T13:16:06Z"
+  "media": {
+    "microphone": "rdp_capture_enabled",
+    "audio_output": "rdp_playback_enabled",
+    "wallpaper": "xyverse_configured_for_user_logon",
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
+  }
 }
